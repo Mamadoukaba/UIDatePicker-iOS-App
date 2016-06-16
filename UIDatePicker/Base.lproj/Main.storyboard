@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UIDatePicker" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jI7-tM-S9h">
+                                <rect key="frame" x="278" y="441" width="44" height="30"/>
+                                <state key="normal" title="Select"/>
+                                <connections>
+                                    <action selector="selectDate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DP5-IY-Dr8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CHV-m4-XX9">
+                                <rect key="frame" x="234" y="479" width="132" height="30"/>
+                                <state key="normal" title="Default Date Picker"/>
+                                <connections>
+                                    <action selector="setDatePickerToDefault:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CMz-wm-Ox5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2g9-7n-vCu">
+                                <rect key="frame" x="195" y="555" width="211" height="30"/>
+                                <state key="normal" title="Date Mode: Count Down Timer"/>
+                                <connections>
+                                    <action selector="setDatePickerToCountDownTimer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Js5-4Y-l8E"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yid-wh-DT0">
+                                <rect key="frame" x="197" y="517" width="207" height="30"/>
+                                <state key="normal" title="Date Mode: Min and Max Date"/>
+                                <connections>
+                                    <action selector="changeDatePickerMinAndMaxDate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iQN-gh-yse"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="CHV-m4-XX9" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="194" id="1PM-fF-Dx5"/>
+                            <constraint firstItem="2g9-7n-vCu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Bka-bO-rLF"/>
+                            <constraint firstItem="2g9-7n-vCu" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="270" id="F7a-yk-9nJ"/>
+                            <constraint firstItem="jI7-tM-S9h" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UNu-TG-mkO"/>
+                            <constraint firstItem="Yid-wh-DT0" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="232" id="aEt-rE-Ewd"/>
+                            <constraint firstItem="jI7-tM-S9h" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="156" id="emA-z9-e3w"/>
+                            <constraint firstItem="Yid-wh-DT0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fqT-bp-mve"/>
+                            <constraint firstItem="CHV-m4-XX9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nkD-ev-QLC"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
